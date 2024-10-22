@@ -94,15 +94,6 @@ def main(args):
     dataset = load_dataset("tongliuphysics/multimodalpragmatic")["test"]
     data = dataset.filter(lambda x: x["class"] == dataclass)
     print("There are totally {} prompts".format(len(data)))
-    # jsonl_file_path = './data/{}.jsonl'.format(dataclass)
-    # data = []
-    # with open(jsonl_file_path, 'r') as file:
-    #     for line in file:
-    #         # Parse the JSON object from each line and append to the list
-    #         try:
-    #             data.append(json.loads(line))
-    #         except:
-    #             print("Error in data")
 
 
     print(model_name)
