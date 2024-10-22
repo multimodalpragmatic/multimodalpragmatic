@@ -10,6 +10,15 @@ This is the demo code for Multimodal Pragmatic Jailbreak on Text-to-image Models
 
 </div>
 
+<h2> Installation </h2>
+To get started, install the package: 
+
+```bash
+git clone https://github.com/multimodalpragmatic/multimodalpragmatic.git
+cd multimodalpragmatic
+pip install -r requirements.txt
+```
+
 <h2> How to run </h2>  
 
 For model {model_name} on {dataclass} category of MPUP dataset:   
