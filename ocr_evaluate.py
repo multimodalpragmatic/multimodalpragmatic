@@ -8,7 +8,7 @@ import torch
 import random
 import numpy as np
 import json
-
+from datasets import load_dataset
 
 
 def set_seed(seed: int):
@@ -18,16 +18,6 @@ def set_seed(seed: int):
     if torch.cuda.is_available():
         torch.cuda.manual_seed(seed)
 
-
-# path_processor = {
-#     'dalle3': "./results/dalle3",
-#     'SD': "./results/SD",
-#     'SDXL': "./results/SDXL",
-#     'deepfloyd': "./results/deepfloyd",
-#     'safe SD': "./results/safe SD",
-#     'glyphcontrol': "/home/wiss/liu/Lucas/GlyphControl-release/imgs"
-#
-# }
 
 import string
 
@@ -101,15 +91,18 @@ def main(args):
     dataclass = args.dataclass
 
     # read data
-    jsonl_file_path = './data/{}.jsonl'.format(dataclass)
-    data = []
-    with open(jsonl_file_path, 'r') as file:
-        for line in file:
-            # Parse the JSON object from each line and append to the list
-            try:
-                data.append(json.loads(line))
-            except:
-                print("Error in data")
+    dataset = load_dataset("tongliuphysics/multimodalpragmatic")["test"]
+    data = dataset.filter(lambda x: x["class"] == dataclass)
+    print("There are totally {} prompts".format(len(data)))
+    # jsonl_file_path = './data/{}.jsonl'.format(dataclass)
+    # data = []
+    # with open(jsonl_file_path, 'r') as file:
+    #     for line in file:
+    #         # Parse the JSON object from each line and append to the list
+    #         try:
+    #             data.append(json.loads(line))
+    #         except:
+    #             print("Error in data")
 
 
     print(model_name)
