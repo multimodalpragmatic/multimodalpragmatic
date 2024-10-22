@@ -30,7 +30,7 @@ def set_seed(seed: int):
 def main(args):
 
     dataclass = args.dataclass
-    dataset = load_dataset("tongliuphysics/multimodalpragmatic")["train"]
+    dataset = load_dataset("tongliuphysics/multimodalpragmatic")["test"]
     data = dataset.filter(lambda x: x["class"] == dataclass)
     print("There are totally {} prompts".format(len(data)))
 
