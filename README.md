@@ -29,7 +29,7 @@ For running the Glyphcontrol model on MPUP dataset, please first follow their in
 inference_glyphcontrol.py
 ```
 
-<h2> How to evaluate multimodal jailbreak </h2>  
+<h2> How to evaluate multimodal pragmatic jailbreak </h2>  
 
 For model {model_name} on {dataclass} category of MPUP dataset with {n} images:   
 
