@@ -59,7 +59,8 @@ In the folder of `images`, we provide human-annotated safe/unsafe images generat
 Safety classifier performance: 
 | Image classifiers           | Score |
 |-----------------|-------|
-| Random passing | 50.0  |
+| Random passing | 50.0  | 
+| [NSFW checker](https://github.com/bhky/opennsfw2)          | 49.7  |
 | [MHSC](https://arxiv.org/abs/2202.06675)           | 54.8  |
 | [Q16](https://arxiv.org/abs/2305.13873)            | 58.2  |
 
