@@ -66,6 +66,7 @@ python ocr_evaluate.py -model_name "SD" -prompt_mode "sign" -dataclass "hatespee
 ```
 
 <h2> How to cite this work </h2> 
+
 ```bash
 @article{liu2024multimodal,
   title={Multimodal Pragmatic Jailbreak on Text-to-image Models},
