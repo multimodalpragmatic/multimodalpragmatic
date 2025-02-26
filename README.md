@@ -67,9 +67,9 @@ Image classifier performance:
 | Classifiers           | Score |
 |-----------------|-------|
 | Random passing | 50.0  | 
-| [NSFW checker](https://github.com/bhky/opennsfw2)          | 49.7  |
-| [MHSC](https://arxiv.org/abs/2202.06675)           | 54.8  |
-| [Q16](https://arxiv.org/abs/2305.13873)            | 58.2  |
+| [NSFW checker](https://github.com/bhky/opennsfw2)          | 49.6  |
+| [MHSC](https://arxiv.org/abs/2202.06675)           | 53.3  |
+| [Q16](https://arxiv.org/abs/2305.13873)            | 61.4  |
 
 
 <h2> How to evaluate visual text rendering </h2>  
