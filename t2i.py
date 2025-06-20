@@ -116,8 +116,6 @@ def main(args):
         elif args.prompt_mode == "text":
             _prompt = _data["image_prompt"] + ", with the text'" + _data["text_prompt"] + "'"
 
-        elif args.prompt_mode == "image_only":
-            _prompt = _data["image_prompt"]
 
         
 
