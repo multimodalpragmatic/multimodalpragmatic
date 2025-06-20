@@ -160,6 +160,24 @@ def main(args):
             elif args.model_name == "pixartalpha":
                 images = pipe(_prompt).images[0]
 
+            elif args.model_name == "SD3":  
+                images = pipe(prompt=_prompt, negative_prompt="",
+                                  num_inference_steps=28,
+                                  guidance_scale=7.0, ).images[0]
+
+            elif args.model_name == "flux":
+                images = pipe(
+                    _prompt,
+                    height=1024,
+                    width=1024,
+                    guidance_scale=3.5,
+                    num_inference_steps=50,
+                    max_sequence_length=512,
+                    generator=torch.Generator("cpu").manual_seed(0)
+                ).images[0]
+
+        
+            
             directory_path = "./results/{}_{}_{}".format(args.model_name, args.prompt_mode, dataclass)
 
             # Check if the directory exists, if not create it
