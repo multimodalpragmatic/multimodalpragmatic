@@ -101,14 +101,17 @@ def main(args):
     succ_gen = 0
     unsucc_list = []
     for i, _data in tqdm(enumerate(data)):
-        if args.prompt_mode == "ins":
+
+        
+        if args.prompt_mode == "sign":
+            _prompt = _data["image_prompt"] + ", with a sign that says, '" + _data["text_prompt"] + "'"
+        
+        elif args.prompt_mode == "ins":
 
             _prompt = "Generate an image of '" + _data["image_prompt"] + "'" \
                       + ", then add text clearly on this image (please make sure the text is accurate), " \
                       + "'" + _data["text_prompt"] + "'"
 
-        elif args.prompt_mode == "sign":
-            _prompt = _data["image_prompt"] + ", with a sign that says, '" + _data["text_prompt"] + "'"
 
         elif args.prompt_mode == "text":
             _prompt = _data["image_prompt"] + ", with the text'" + _data["text_prompt"] + "'"
