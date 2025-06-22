@@ -1,4 +1,4 @@
-# Multimodal Pragmatic Jailbreak on Text-to-image Models
+# Multimodal Pragmatic Jailbreak on Text-to-image Models (ACL 2025; ReGenAI@CVPR Best🏆)
 
 This is the official code repository for the paper of Multimodal Pragmatic Jailbreak on Text-to-image Models.  
 Please do not hesitate to reach out for any questions.  
