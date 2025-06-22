@@ -1,4 +1,4 @@
-# Multimodal Pragmatic Jailbreak on Text-to-image Models (ACL 2025; ReGenAI@CVPR Best🏆)
+# Multimodal Pragmatic Jailbreak on Text-to-image Models (ACL 2025 main; ReGenAI@CVPR Best Paper🏆)
 
 This is the official code repository for the paper of Multimodal Pragmatic Jailbreak on Text-to-image Models.  
 Please do not hesitate to reach out for any questions.  
@@ -6,6 +6,7 @@ Please do not hesitate to reach out for any questions.
 <a href='https://huggingface.co/datasets/tongliuphysics/multimodalpragmatic'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-MultimodalJailbreak-blue'></a> 
 
 <div align="center">
+
 
 <img src="files/111.png" width="99%">
 
@@ -41,6 +42,9 @@ pip install -r requirements.txt
 ```
 
 <h2> How to run </h2>  
+
+<img src="files/mainfig.png" width="99%">
+
 
 For model {model_name} on {dataclass} category of MPUP dataset:   
 
