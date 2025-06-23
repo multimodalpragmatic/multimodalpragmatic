@@ -41,10 +41,17 @@ cd multimodalpragmatic
 pip install -r requirements.txt
 ```
 
-<h2> How to run </h2>  
+<h2> About the dataset </h2>  
 
+A prompt contains three parts: 
+<pre>
+"&lt;image-generation prompt&gt;, &lt;connect prompt&gt; (e.g., "with a sign that says, "), '&lt;visual text prompt&gt;'."
+</pre>
 <img src="files/mainfig.png" width="99%">
 
+&lt;image-generation prompt&gt; and &lt;visual text prompt&gt; can be viewed in huggingface link: <a href='https://huggingface.co/datasets/tongliuphysics/multimodalpragmatic'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-MultimodalJailbreak-blue'></a> 
+
+<h2> You can also simply modify and run </h2>  
 
 For model {model_name} on {dataclass} category of MPUP dataset:   
 
