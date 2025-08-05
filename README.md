@@ -102,10 +102,32 @@ python ocr_evaluate.py -model_name "SD" -prompt_mode "sign" -dataclass "hatespee
 <h2> How to cite this work </h2> 
 
 ```bash
-@article{liu2024multimodal,
-  title={Multimodal Pragmatic Jailbreak on Text-to-image Models},
-  author={Liu, Tong and Lai, Zhixin and Zhang, Gengyuan and Torr, Philip and Demberg, Vera and Tresp, Volker and Gu, Jindong},
-  booktitle={arXiv preprint arxiv:2409.19149},
-  year={2024}
+@inproceedings{liu-etal-2025-multimodal-pragmatic,
+    title = "Multimodal Pragmatic Jailbreak on Text-to-image Models",
+    author = "Liu, Tong  and
+      Lai, Zhixin  and
+      Wang, Jiawen  and
+      Zhang, Gengyuan  and
+      Chen, Shuo  and
+      Torr, Philip  and
+      Demberg, Vera  and
+      Tresp, Volker  and
+      Gu, Jindong",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.234/",
+    doi = "10.18653/v1/2025.acl-long.234",
+    pages = "4681--4720",
+    ISBN = "979-8-89176-251-0",
+    abstract = "Diffusion models have recently achieved remarkable advancements in terms of image quality and fidelity to textual prompts. Concurrently, the safety of such generative models has become an area of growing concern. This work introduces a novel type of jailbreak, which triggers T2I models to generate the image with visual text, where the image and the text, although considered to be safe in isolation, combine to form unsafe content. To systematically explore this phenomenon, we propose a dataset to evaluate the current diffusion-based text-to-image (T2I) models under such jailbreak. We benchmark nine representative T2I models, including two closed-source commercial models. Experimental results reveal a concerning tendency to produce unsafe content: all tested models suffer from such type of jailbreak, with rates of unsafe generation ranging from around 10{\%} to 70{\%} where DALL{\textperiodcentered}E 3 demonstrates almost the highest unsafety. In real-world scenarios, various filters such as keyword blocklists, customized prompt filters, and NSFW image filters, are commonly employed to mitigate these risks. We evaluate the effectiveness of such filters against our jailbreak and found that, while these filters may be effective for single modality detection, they fail to work against our jailbreak. We also investigate the underlying reason for such jailbreaks, from the perspective of text rendering capability and training data. Our work provides a foundation for further development towards more secure and reliable T2I models."
 }
+
 ```
+
